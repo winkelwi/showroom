@@ -1,59 +1,68 @@
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    main {
-      padding: 20px;
-    }
-    
-    h1, h2, h3 {
-      margin: 0;
-    }
-    
-    .item {
-      border: 1px solid #ccc;
-      border-radius: 5px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  .video-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .video-item video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .video-item .price {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .video-item .color-options {
+    margin-top: 10px;
+  }
+  
+  .video-item .color-options span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
       padding: 10px;
-      margin-bottom: 20px;
     }
     
-    .item h3 {
-      color: #333;
-      font-size: 20px;
-      margin-bottom: 5px;
+    .video-item {
+      padding: 10px;
     }
-    
-    .item p {
-      color: #666;
-      margin-bottom: 10px;
-    }
-    
-    .add-to-cart {
-      background-color: #ff6600;
-      border: none;
-      color: #fff;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    
-    .add-to-cart:hover {
-      background-color: #ff8533;
-    }
-    
-    footer {
-      background-color: #f5f5f5;
-      padding: 20px;
-      text-align: center;
-    }
+  }
